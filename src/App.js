@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
 import Layout from "~/layout";
 import Routes from "./Router";
+import GlobalStyle from "~/styles/global";
 
 function App() {
   const [t, i18n] = useTranslation();
@@ -13,6 +13,7 @@ function App() {
 
   return (
     <Layout>
+      <GlobalStyle />
       <Routes />
     </Layout>
   );

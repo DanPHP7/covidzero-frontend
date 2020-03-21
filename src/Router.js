@@ -10,10 +10,10 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Map} />
-      <Route path="/cities" exact component={Cities} />
-      <Route path="/area" exact component={Area} />
-      <Route path="/help" exact component={Help} />
-      <Route path="/news" exact component={News} />
+      <Route path="/cities" component={Cities} />
+      <Route path="/area" component={Area} />
+      <Route path="/help" component={Help} />
+      <Route path="/news" component={News} />
 
       <Route path="/" component={() => <h1>404</h1>} />
     </Switch>
